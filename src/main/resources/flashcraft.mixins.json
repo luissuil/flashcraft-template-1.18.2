@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.tanatosmc.flashcraft.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "RecipeBookResultsMixin",
+    "RecipeBookWidgetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
