@@ -1,70 +1,37 @@
 # FlashCraft
 
-<div align="center">
+A minimalist Fabric mod for Minecraft 1.18.2 that adds quick crafting functionality to the recipe book.
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.18.2-brightgreen)
-![Mod Loader](https://img.shields.io/badge/Mod%20Loader-Fabric-dbd0b4)
-![Java Version](https://img.shields.io/badge/Java-17-orange)
-![License](https://img.shields.io/badge/License-CC0--1.0-blue)
+## Features
 
-**Backports the Quick Crafting feature from Snapshot 24w34a to Minecraft 1.18.2**
+- **Space/Enter Crafting**: Press Space or Enter while hovering over a recipe to craft instantly
+- **Batch Crafting**: Hold Space/Enter to continuously craft the same recipe
+- **Shift Support**: Hold Shift while pressing Space/Enter to craft 1 stack at a time
+- **150ms Cooldown**: Prevents accidental double-clicks and spamming
 
-[English](#-overview) | [Español](README_ES.md)
+## Installation
 
-</div>
+1. Download the latest `.jar` file from the [Releases](https://github.com/luissuil/flashcraft-template-1.18.2/releases)
+2. Place it in your `mods` folder
+3. Launch Minecraft with Fabric Loader installed
 
----
+## Requirements
 
-## 📖 Overview
+- Minecraft 1.18.2
+- Fabric Loader (≥0.18.1)
+- Fabric API
 
-**FlashCraft** is a lightweight client-side Fabric mod that brings the modern "Quick Crafting" functionality from Minecraft 1.21.2 (Snapshot 24w34a) back to version 1.18.2. It enhances the Recipe Book interface by allowing players to quickly re-craft items using keyboard shortcuts, making repetitive crafting tasks significantly faster and more convenient.
+## Controls
 
-## ✨ Features
+| Action | Key |
+|--------|-----|
+| Quick Craft | Space or Enter |
+| Batch Craft | Hold Space/Enter |
+| Craft 1 Stack | Shift + Space/Enter |
 
-### Quick Re-Crafting
-- **Press `Space` or `Enter`** while hovering over a recipe in the Recipe Book to instantly craft it
-- **Hold `Shift` + `Space/Enter`** to craft as many items as possible with your available materials
-- **Hold the key** to craft continuously (batch crafting)
-- **Audio Feedback**: Different sounds for successful crafts vs cooldown blocks
+## License
 
-### ⚙️ Fully Configurable
-- **Custom Keybindings**: Change craft keys in Controls settings
-- **Config File**: Adjust all settings in `config/flashcraft.json`
-  - `cooldownMs` - Delay between crafts (default: 150ms)
-  - `enableBatchCrafting` - Toggle batch crafting
-  - `showCraftCounter` - Toggle visual counter
-  - `enableFavorites` - Toggle favorites system
-  - `playCooldownSound` - Toggle cooldown sound
-
-### 📊 Craft Counter
-- Visual counter showing how many items you've crafted this session
-- Displays in the Recipe Book area
-- Auto-hides after 3 seconds of inactivity
-
-### 🔢 Craft Specific Amounts
-- Press **Ctrl + Number** before crafting to set a target amount
-- Example: `Ctrl+3+2` then `Space` = craft exactly 32 items
-- Sound notification when target is reached
-
-### ⭐ Favorites System
-- Press **F** on a recipe to mark it as favorite
-- Favorites are marked with ★ and their slot number
-- Quick access to your most-used recipes
-
-### Vanilla-Like Experience
-- **100% Client-Side**: No server installation required
-- **Native Integration**: Seamlessly blends with the default Recipe Book UI
-- **Performance**: Lightweight implementation using Mixin injections
-- **Compatibility**: Works with vanilla servers and other mods
-
-## 🎮 How to Use
-
-1. Open any crafting interface (Crafting Table, Inventory crafting grid, etc.)
-2. Click on a recipe in the Recipe Book to select it
-3. Press `Space` or `Enter` to craft one batch
-4. **Hold** the key to craft continuously
-5. Hold `Shift` + key to craft maximum amount per craft
-6. Press `Ctrl + Number` to set a specific craft amount
+CC0-1.0 - Feel free to use this code in any way you want.
 7. Press `F` to toggle favorite on selected recipe
 
 ## ⌨️ Default Keybindings
