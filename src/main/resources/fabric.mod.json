@@ -13,8 +13,11 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/flashcraft/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
+		"client": [
+			"net.tanatosmc.flashcraft.FlashCraftMod"
+		]
 	},
 	"mixins": [
 		"flashcraft.mixins.json"
